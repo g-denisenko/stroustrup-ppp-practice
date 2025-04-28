@@ -28,16 +28,16 @@
 
 13. Create a program to find all the prime numbers between 1 and 100. There is a classic method for doing this, called the *“Sieve of Eratosthenes.”* If you don’t know that method, get on the Web and look it up. Write your program using this method.
 
-14. Write a program that takes an input value n and then finds the first **n** primes.
+14. Write a program that takes an input value n and then finds the first `n` primes.
 
-15. In the drill, you wrote a program that, given a series of numbers, found the max and min of that series. The number that appears the most times in a sequence is called the *mode*. Create a program that finds the mode of a set of positive integers.
+15. In the drill, you wrote a program that, given a series of numbers, found the max and min of that series. The number that appears the most times in a sequence is called the *`mode`*. Create a program that finds the mode of a set of positive integers.
 
-16. Write a program that finds the min, max, and mode of a sequence of **string**s.
+16. Write a program that finds the min, max, and mode of a sequence of `string`s.
 
-17. Write a program to solve quadratic equations. A quadratic equation is of the form *ax2 + bx + c = 0*. If you don’t know the formula for solving such an expression, do some research. Remember, researching how to solve a problem is often necessary before a programmer can teach the computer how to solve it. Use *double*s for the user inputs for **a**, **b**, and **c**. Since there are two solutions to a quadratic equation, output both **x1** and **x2**.
+17. Write a program to solve quadratic equations. A quadratic equation is of the form *`ax2 + bx + c = 0`*. If you don’t know the formula for solving such an expression, do some research. Remember, researching how to solve a problem is often necessary before a programmer can teach the computer how to solve it. Use *double*s for the user inputs for `a`, `b`, and `c`. Since there are two solutions to a quadratic equation, output both `x1` and `x2`.
 
-18. Write a program where you first enter a set of name-and-value pairs, such as **Joe 17** and **Barbara 22**. For each pair, add the name to a **vector** called **names** and the number to a **vector** called **scores** (in corresponding positions, so that if **names[7]=="Joe"** then **scores[7]==17**). Terminate input with **NoName 0**. Check that each name is unique and terminate with an error message if a name is entered twice. Write out all the (name,score) pairs, one per line.
+18. Write a program where you first enter a set of name-and-value pairs, such as `Joe 17` and `Barbara 22`. For each pair, add the name to a `vector` called `names` and the number to a `vector` called `scores` (in corresponding positions, so that if `names[7]=="Joe"` then `scores[7]==17`). Terminate input with `NoName 0`. Check that each name is unique and terminate with an error message if a name is entered twice. Write out all the (name,score) pairs, one per line.
 
-19. Modify the program from the previous exercise so that once you have entered the name-and-value pairs, you ask for values: In a loop, when you enter a name, the program will output the corresponding score or **name not found**.
+19. Modify the program from the previous exercise so that once you have entered the name-and-value pairs, you ask for values: In a loop, when you enter a name, the program will output the corresponding score or `name not found`.
 
-20. Modify the program from the previous exercise so that once you have entered the name-and-value pairs, you ask for names: In a loop, when you enter a value, the program will output all the names with that score or **score not found**.
+20. Modify the program from the previous exercise so that once you have entered the name-and-value pairs, you ask for names: In a loop, when you enter a value, the program will output all the names with that score or `score not found`.
