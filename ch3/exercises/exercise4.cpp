@@ -55,7 +55,7 @@ int main() {
             print_smallest(distances);
             print_greatest(distances);
         }
-        else cout << "Distance cannot be negative. Try again..." << endl;
+        else cout << "Distance cannot be '0' or negative. Try again..." << endl;
     }
     return 0;
 }
