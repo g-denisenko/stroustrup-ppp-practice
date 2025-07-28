@@ -1,16 +1,22 @@
 #include <iostream>
+#include <limits>
 using namespace std;
 
-double ctok(double c)                 // converts Celsius to Kelvin
+double celsius_to_kelvin(double celsius)
 {
-    int k = c + 273.25;
-    return int
+    return celsius + 273.15;
 }
 
 int main()
 {
-    double c = 0;                     // declare input variable
-    cin >> d;                         // retrieve temperature to input variable
-    double k = ctok("c");             // convert temperature
-    Cout << k << '/n' ;               // print out temperature
+    cout << "Enter a temperature in Celsius: " << endl;
+    double celsius = 0;
+    while(!(cin>>celsius)){
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cerr << "Wrong input. Try again" << endl;
+    }
+    cout << "You entered Celsius: " << celsius << endl;
+    double kelvin = celsius_to_kelvin(celsius);
+    cout << celsius << " celsius in kelvin is: " << kelvin << endl;
 }
