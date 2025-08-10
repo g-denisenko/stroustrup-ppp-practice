@@ -9,21 +9,19 @@ double discriminant(double a, double b, double c) {
     return d;
 }
 
-double solution_one_root(double a, double b, double c) {
+void solution_one_root(double a, double b, double c) {
     double x = -b/(2*a);
     cout << "x= " << x << endl;
     assert(a*x*x+b*x+c==0 && "Solution for 'x' is wrong!");
-    return x;
 }
 
-vector<double> solution_two_root(double a, double b, double c, double d) {
+void solution_two_root(double a, double b, double c, double d) {
     vector<double> result;
     result.push_back((-b + sqrt(d))/(2*a));
     result.push_back((-b - sqrt(d))/(2*a));
     cout << "x1= " << result[0] << "\t x2= " << result[1] << endl;
     assert(a*result[0]*result[0]+b*result[0]+c==0 && "Check failed! Possibly, wrong rounding operation for x1");
     assert(a*result[1]*result[1]+b*result[1]+c==0 && "Check failed! Possibly, wrong rounding operation for x2");
-    return result;
 }
 
 vector<int> user_nums() {
@@ -60,8 +58,8 @@ int main() {
     cout << "Discrimintant is " << d << endl;
     if(d) cout << "Square root of discriminant is " << sqrt(d) << endl;
     
-    if(d > 0) vector<double> x = solution_two_root(a, b, c, d);
-    if(d == 0) double x = solution_one_root(a, b, c);
+    if(d > 0) solution_two_root(a, b, c, d);
+    if(d == 0) solution_one_root(a, b, c);
 
     return 0;
 }
