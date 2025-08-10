@@ -11,6 +11,7 @@ double discriminant(double a, double b, double c) {
 
 double solution_one_root(double a, double b, double c) {
     double x = -b/(2*a);
+    cout << "x= " << x << endl;
     assert(a*x*x+b*x+c==0 && "Solution for 'x' is wrong!");
     return x;
 }
@@ -59,13 +60,8 @@ int main() {
     cout << "Discrimintant is " << d << endl;
     if(d) cout << "Square root of discriminant is " << sqrt(d) << endl;
     
-    if(d > 0) {
-        vector<double> x = solution_two_root(a, b, c, d);
-        
-    }
-    if(d == 0) {
-        double x = solution_one_root(a, b, c);
-        cout << "("<< a << ")xx+(" << b << ")x+(" << c << ")=0:\nx = " << x << endl;
-    }
+    if(d > 0) vector<double> x = solution_two_root(a, b, c, d);
+    if(d == 0) double x = solution_one_root(a, b, c);
+
     return 0;
 }
