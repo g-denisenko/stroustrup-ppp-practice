@@ -1,4 +1,4 @@
-### 📚 DRILL
+### 📚 EXERCISES
 
 ---
 
@@ -42,7 +42,7 @@ Handle all inputs. For example, make sure to give an error message if the user a
 
 10. Modify the program from the previous exercise to use `double` instead of `int`. Also, make a `vector` of `double`'s containing the *N-1* differences between adjacent values and write out that `vector` of differences.
 
-11. “Write a program that writes out the first N values of the Fibonacci series, that is, the series that starts with *1 1 2 3 5 8 13 21 34*. The next number of the series is the sum of the two previous ones. Find the largest Fibonacci number that fits in an `int`.
+11. Write a program that writes out the first N values of the Fibonacci series, that is, the series that starts with *1 1 2 3 5 8 13 21 34*. The next number of the series is the sum of the two previous ones. Find the largest Fibonacci number that fits in an `int`.
 
 12. Implement a little guessing game called (for some obscure reason) “Bulls and Cows.” The program has a `vector` of four different integers in the range 0 to 9 (e.g., 1234 but not 1122) and it is the user’s task to discover those numbers by repeated guesses. Say the number to be guessed is 1234 and the user guesses 1359; the response should be “1 bull and 1 cow” because the user got one digit (1) right and in the right position (a bull) and one digit (3) right but in the wrong position (a cow). The guessing continues until the user gets four bulls, that is, has the four digits correct and in the correct order.
 
