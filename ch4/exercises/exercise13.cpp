@@ -143,7 +143,7 @@ bool game() {
     vector<int> secret = secret_num();
     int cycle_counter = 1;
 
-    print_vector_ints(secret);   // Show SECRET number
+    // print_vector_ints(secret);   // Show SECRET number
     cout << endl;
 
     while(true) {
