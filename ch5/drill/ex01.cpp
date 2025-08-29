@@ -133,6 +133,7 @@ double term()
         case '*':
             left *= primary();
             t = ts.get();
+            break;
         case '/':
             {    
                 double d = primary();
