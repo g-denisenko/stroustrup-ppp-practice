@@ -7,6 +7,7 @@
 2. Add the ability to use `{}` as well as `()` in the program, so that `{(4+5)*6} / (3+4)` will be a valid expression.
 
 3. Add a factorial operator: use a suffix `!` operator to represent “factorial.” For example, the expression `7!` means `7 * 6 * 5 * 4 * 3 * 2 * 1`. Make `!` bind tighter than `*` and `/`; that is, `7*8!` means `7*(8!)` rather than `(7*8)!`. Begin by modifying the grammar to account for a higher-level operator. To agree with the standard mathematical definition of factorial, let `0!` evaluate to `1`. Hint: The calculator functions deal with `doubles`, but factorial is defined only for `int`s, so just for `x!`, assign the `x` to an `int` and calculate the factorial of that `int`.
+
 4. Define a class *`Name_value`* that holds a string and a value. Rework exercise 20 in Chapter 3 to use a *`vector<Name_value>`* instead of two `vectors`.
 
 5. Write a grammar for bitwise logical expressions. A bitwise logical expression is much like an arithmetic expression except that the operators are `!` (not), `˜` (complement), `&` (and), `|` (or), and `ˆ` (exclusive or). Each operator does its operation to each bit of its integer operands (see PPP2.§25.5). `!` and `˜` are prefix unary operators. A `ˆ` binds tighter than a `|` (just as `*` binds tighter than `+`) so that `x|yˆz` means `x|(yˆz)` rather than `(x|y)ˆz`. The `&` operator binds tighter than `ˆ` so that `xˆy&z` means `xˆ(y&z)`.
