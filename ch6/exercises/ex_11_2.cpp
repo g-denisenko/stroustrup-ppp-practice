@@ -9,7 +9,6 @@ Re-write a program that plays the game “Rock, Paper, Scissors.”
 #include <map>
 #include <stdexcept>
 #include <random>
-
 using namespace std;
 
 const map<int, string> table = {
@@ -180,7 +179,7 @@ int game() {
             break; 
     }
     cout << "Game exit.\nTimes played: " << count << endl;
-    return count;
+    return 0;
 }
 
 int main() {
