@@ -1,0 +1,1 @@
+Write a program that reads a text file and converts its input to all lowercase, producing a new file.
