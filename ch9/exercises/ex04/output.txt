@@ -1,0 +1,6 @@
+HEX: 43
+DEC: 0
+DEC: 0
+OCT: 12475
+HEX: FF
+HEX: f
