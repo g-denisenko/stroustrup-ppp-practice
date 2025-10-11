@@ -1,5 +1,5 @@
 /*
-Polishing and testing different mechanics and ficilites of the language.
+Polishing skills and testing different mechanics and ficilites of the language.
 */
 
 #include <iostream>
